@@ -1,7 +1,7 @@
 FROM resin/rpi-raspbian:wheezy 
 MAINTAINER Simon Brushett <simon@firecbue.co.uk>
 
-RUN apt-get update && apt-get install transmission-daemon
+RUN apt-get update && apt-get install transmission-daemon -y
     
 VOLUME /config
 VOLUME /data
