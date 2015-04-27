@@ -8,6 +8,4 @@ VOLUME /data
 
 EXPOSE 9091
 
-COPY settings.json /config/settings.json
-
-CMD ["/usr/bin/transmission-daemon", "--config-dir /config/"]
+CMD ["/usr/bin/transmission-daemon", "--config-dir /config", "--download-dir /data", "--no-incomplete-dir"]
