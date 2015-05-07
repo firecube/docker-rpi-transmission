@@ -7,4 +7,4 @@ VOLUME /data
 
 EXPOSE 9091
 
-CMD ["/usr/bin/transmission-daemon", "--config-dir", "/config", "--download-dir", "/data", "--no-incomplete-dir", "-f"]
+CMD ["/usr/bin/transmission-daemon", "--config-dir", "/config", "--download-dir", "/data", "--no-incomplete-dir", "-f", "-T", "-a *.*.*.*"]
